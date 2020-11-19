@@ -1,4 +1,3 @@
-import sys
 import unittest
 import pytest
 import xmlrunner
@@ -110,16 +109,7 @@ class MyTest(unittest.TestCase):
         self.assertEqual(mustBeFirst.num, pQueue.delete())
 
 
-def sort_test_suite():
-    suite = unittest.TestSuite()
+if __name__ == "__main__":
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
 
-    suite.addTest(MyTest('test_peeking'))
-    suite.addTest(MyTest('test_deleting'))
-    return suite
-
-
-if __name__ == 'main':
-    runner = unittest.TextTestRunner(stream=sys.stdout, verbosity=2)
-    test_suite = sort_test_suite()
-    runner.run(test_suite)
 pytest.main()
