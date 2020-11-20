@@ -1,5 +1,5 @@
 import unittest
-import pytest
+#import pytest
 import xmlrunner
 
 # class for Node with numbers
@@ -112,4 +112,4 @@ class MyTest(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
 
-pytest.main()
+#pytest.main()
