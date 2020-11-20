@@ -114,5 +114,5 @@ if __name__ == '__main__':
         unittest.main(
             testRunner=xmlrunner.XMLTestRunner(output=output),
             failfast=False, buffer=False, catchbreak=False)
-
+print("Test success")
 #pytest.main()
