@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="MyTest-20201120174036" tests="2" file=".py" time="0.005" timestamp="2020-11-20T17:40:36" failures="0" errors="0" skipped="0">
+		<testcase classname="MyTest" name="test_deleting" time="0.004" timestamp="2020-11-20T17:40:36" file="test.py" line="98"/>
+		<testcase classname="MyTest" name="test_peeking" time="0.001" timestamp="2020-11-20T17:40:36" file="test.py" line="84"/>
+	</testsuite>
+</testsuites>
