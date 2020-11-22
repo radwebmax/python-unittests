@@ -8,6 +8,12 @@ pipeline{
         checkout scm
        }
      }
+    stage('Build'){
+      steps{
+        echo "Building...${BUILD_NUMBER}"
+        echo "Build completed"
+      }
+    }
      stage("Test"){
       agent{docker {image 'alpine'
               args '-u=\"root\"'
