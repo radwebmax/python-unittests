@@ -1,5 +1,5 @@
 pipeline{
-  options{timestamps}
+  options{timestamps()}
   agent none
   stages{
     stage("Check scm"){
