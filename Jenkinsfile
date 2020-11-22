@@ -8,7 +8,7 @@ pipeline{
         checkout scm
        }
      }
-    stage('Build'){
+     stage('Build'){
       steps{
         echo "Building...${BUILD_NUMBER}"
         echo "Build completed"
