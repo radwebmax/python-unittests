@@ -20,7 +20,7 @@ pipeline{
               }
             }
        steps{
-        //sh 'apk add --update python3 py-pip'
+        sh 'apk add --update python3 py-pip'
         sh 'pip install xmlrunner'
         sh 'python3 test.py'
        }
