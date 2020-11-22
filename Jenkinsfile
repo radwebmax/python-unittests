@@ -20,6 +20,7 @@ pipeline{
               }
             }
        steps{
+        script { System.setProperty("Dorg.jenkinsci.plugins.durabletask.BourneShellScript.LAUNCH_DIAGNOSTICS", "true"); }
         sh 'apk add --update python3 py-pip'
         sh 'pip install xmlrunner'
         sh 'python3 test.py'
