@@ -1,5 +1,5 @@
 pipeline{
-  options{timestamps()}
+options{timestamps()}
   agent none
   stages{
     stage("Check scm"){
@@ -30,6 +30,7 @@ pipeline{
             }
         success{
           echo 'Application testing successfully completed'
+        }
         failure{
           echo 'F#ck, smth went wrong =('
         }
@@ -37,6 +38,6 @@ pipeline{
     }
   }
  }
-}
+
      
       
