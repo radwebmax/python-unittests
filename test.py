@@ -108,11 +108,14 @@ class MyTest(unittest.TestCase):
         pQueue.add(node25)
         self.assertEqual(mustBeFirst.num, pQueue.delete())
 
-
 if __name__ == '__main__':
+    runner = xmlrunner.XMLTestRunner(output='test-reports')
+    unittest.main(testRunner=runner)
+        
+"""if __name__ == '__main__':
     with open('test-reports/results.xml', 'wb') as output:
         unittest.main(
             testRunner=xmlrunner.XMLTestRunner(output=output),
             failfast=False, buffer=False, catchbreak=False)
 print("Test success")
-#pytest.main()
+"""
